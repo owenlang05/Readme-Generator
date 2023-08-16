@@ -9,7 +9,9 @@ const questions =
      'How to use the project: ',
      'How can others contribute: ',
      'How to test the project: ',
-     'Choose a license: '];
+     'Choose a license: ',
+     'Github Username: ',
+     'Email Address: '];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
@@ -42,30 +44,38 @@ function init() {
         {
             'type': 'input',
             'message': questions[4],
-            'name' : 'installation'
+            'name': 'contribution'
         },
         {
             'type': 'input',
             'message': questions[5],
+            'name' : 'installation'
+        },
+        {
+            'type': 'input',
+            'message': questions[6],
             'name' : 'test'
         },
         {
             'type': 'list',
-            'message': questions[6],
+            'message': questions[7],
             'name' : 'license',
-            'choices': ['MIT', 'GPL', 'BSD', 'Apache']
+            'choices': ['MIT', 'GPL', 'BSD', 'Apache', 'None']
+        }, 
+        {
+            'type': 'input',
+            'message': questions[8],
+            'name' : 'github'
+        },
+        {
+            'type': 'input',
+            'message': questions[9],
+            'name' : 'email'
         }
     ])
     .then((answers) => {
-        generateMarkdown(answers)
+        console.log(generateMarkdown(answers))
     })
-    .catch((error) => {
-        if (error.isTtyError) {
-        // Prompt couldn't be rendered in the current environment
-        } else {
-        // Something else went wrong
-        }
-     });
 }
 
 // Function call to initialize app
