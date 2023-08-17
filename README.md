@@ -10,7 +10,7 @@ A command line application that generates professional readme.md file
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
-- [How to Contribute](#contribute)
+- [How to Contribute](#how)
 - [Tests](#tests)
 - [Questions](#questions)
 
@@ -29,7 +29,7 @@ https://opensource.org/licenses/MIT
 
 ## How to Contribute
 
-undefined
+Open up a pull request and I will review it.
 
 ## Tests
 

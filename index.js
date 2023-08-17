@@ -49,7 +49,7 @@ function init() {
         {
             'type': 'input',
             'message': questions[4],
-            'name': 'contribution'
+            'name': 'contribute'
         },
         {
             'type': 'input',
