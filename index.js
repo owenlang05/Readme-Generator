@@ -49,32 +49,27 @@ function init() {
         {
             'type': 'input',
             'message': questions[5],
-            'name' : 'installation'
-        },
-        {
-            'type': 'input',
-            'message': questions[6],
             'name' : 'test'
         },
         {
             'type': 'list',
-            'message': questions[7],
+            'message': questions[6],
             'name' : 'license',
             'choices': ['MIT', 'GPL', 'BSD', 'Apache', 'None']
         }, 
         {
             'type': 'input',
-            'message': questions[8],
+            'message': questions[7],
             'name' : 'github'
         },
         {
             'type': 'input',
-            'message': questions[9],
+            'message': questions[8],
             'name' : 'email'
         }
     ])
     .then((answers) => {
-        console.log(generateMarkdown(answers))
+        generateMarkdown(answers)
     })
 }
 
